@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u4j-52-DV5">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Watch Later-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayLocalVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gsm-RC-IcG">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="216" id="LWl-81-TbH">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LWl-81-TbH" id="CeQ-rq-k6e">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoScreenshot01" translatesAutoresizingMaskIntoConstraints="NO" id="KcE-6S-DF1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215.66666666666666"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVt-1g-Y81">
+                                                    <rect key="frame" x="87.666666666666686" y="58" width="200" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="563-ok-e5j"/>
+                                                        <constraint firstAttribute="width" constant="200" id="S2X-BZ-pmf"/>
+                                                    </constraints>
+                                                    <state key="normal" image="playBtn"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kVt-1g-Y81" firstAttribute="centerY" secondItem="CeQ-rq-k6e" secondAttribute="centerY" id="ECD-SA-9v8"/>
+                                                <constraint firstItem="kVt-1g-Y81" firstAttribute="centerX" secondItem="CeQ-rq-k6e" secondAttribute="centerX" id="Kwl-gd-mA0"/>
+                                                <constraint firstItem="KcE-6S-DF1" firstAttribute="leading" secondItem="CeQ-rq-k6e" secondAttribute="leading" id="ejW-3q-Rul"/>
+                                                <constraint firstItem="KcE-6S-DF1" firstAttribute="top" secondItem="CeQ-rq-k6e" secondAttribute="top" id="ikv-pc-SXe"/>
+                                                <constraint firstAttribute="trailing" secondItem="KcE-6S-DF1" secondAttribute="trailing" id="ivo-vh-HY8"/>
+                                                <constraint firstAttribute="bottom" secondItem="KcE-6S-DF1" secondAttribute="bottom" id="yBd-em-bVz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gsm-RC-IcG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3RU-ce-voe"/>
+                            <constraint firstAttribute="trailing" secondItem="gsm-RC-IcG" secondAttribute="trailing" id="9ty-bE-pWe"/>
+                            <constraint firstAttribute="bottom" secondItem="gsm-RC-IcG" secondAttribute="bottom" id="B0i-lI-Ozb"/>
+                            <constraint firstItem="gsm-RC-IcG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cXU-cl-bgp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Watch Later" id="MXN-ip-B6u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="-564.53201970443354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tEs-9n-Wud">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u4j-52-DV5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h9R-tX-NEf">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XJq-iq-nh2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEC-yt-4dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playBtn" width="60" height="60"/>
+        <image name="videoScreenshot01" width="375" height="220"/>
+    </resources>
+</document>
