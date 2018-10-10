@@ -21,34 +21,58 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="216" id="LWl-81-TbH">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="216"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="220" id="LWl-81-TbH" customClass="VideoCell" customModule="PlayLocalVideo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="220"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LWl-81-TbH" id="CeQ-rq-k6e">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="219.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoScreenshot01" translatesAutoresizingMaskIntoConstraints="NO" id="KcE-6S-DF1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="215.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="219.66666666666666"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVt-1g-Y81">
-                                                    <rect key="frame" x="87.666666666666686" y="58" width="200" height="100"/>
+                                                    <rect key="frame" x="87.666666666666686" y="60" width="200" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="563-ok-e5j"/>
                                                         <constraint firstAttribute="width" constant="200" id="S2X-BZ-pmf"/>
                                                     </constraints>
                                                     <state key="normal" image="playBtn"/>
+                                                    <connections>
+                                                        <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iVW-53-Vgs"/>
+                                                    </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji Among Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm7-cq-DxE">
+                                                    <rect key="frame" x="128" y="160" width="119" height="19.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube - 06.22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-vS-heT">
+                                                    <rect key="frame" x="141.66666666666666" y="187.33333333333334" width="91.666666666666657" height="14.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="FJm-vS-heT" firstAttribute="top" secondItem="dm7-cq-DxE" secondAttribute="bottom" constant="8" id="0g0-n8-qZn"/>
+                                                <constraint firstItem="dm7-cq-DxE" firstAttribute="centerX" secondItem="CeQ-rq-k6e" secondAttribute="centerX" id="1Bt-ra-HbR"/>
                                                 <constraint firstItem="kVt-1g-Y81" firstAttribute="centerY" secondItem="CeQ-rq-k6e" secondAttribute="centerY" id="ECD-SA-9v8"/>
                                                 <constraint firstItem="kVt-1g-Y81" firstAttribute="centerX" secondItem="CeQ-rq-k6e" secondAttribute="centerX" id="Kwl-gd-mA0"/>
+                                                <constraint firstItem="FJm-vS-heT" firstAttribute="centerX" secondItem="CeQ-rq-k6e" secondAttribute="centerX" id="Ngk-zI-Oo9"/>
                                                 <constraint firstItem="KcE-6S-DF1" firstAttribute="leading" secondItem="CeQ-rq-k6e" secondAttribute="leading" id="ejW-3q-Rul"/>
+                                                <constraint firstItem="dm7-cq-DxE" firstAttribute="top" secondItem="kVt-1g-Y81" secondAttribute="bottom" id="hUm-8x-QuE"/>
                                                 <constraint firstItem="KcE-6S-DF1" firstAttribute="top" secondItem="CeQ-rq-k6e" secondAttribute="top" id="ikv-pc-SXe"/>
                                                 <constraint firstAttribute="trailing" secondItem="KcE-6S-DF1" secondAttribute="trailing" id="ivo-vh-HY8"/>
                                                 <constraint firstAttribute="bottom" secondItem="KcE-6S-DF1" secondAttribute="bottom" id="yBd-em-bVz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoScreenshot" destination="KcE-6S-DF1" id="zGf-Pv-GiH"/>
+                                            <outlet property="videoSourceLabel" destination="FJm-vS-heT" id="I6u-LE-2oW"/>
+                                            <outlet property="videoTitle" destination="dm7-cq-DxE" id="jfK-rZ-Axf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -63,6 +87,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Watch Later" id="MXN-ip-B6u"/>
+                    <connections>
+                        <outlet property="videoTableView" destination="gsm-RC-IcG" id="ijo-SM-16d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
