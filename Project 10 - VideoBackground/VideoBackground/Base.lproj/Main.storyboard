@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoBackground" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZJ-k5-yMW">
+                                <rect key="frame" x="30" y="497" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fZS-QY-LWn"/>
+                                </constraints>
+                                <state key="normal" title="Login in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uOm-Xq-TVB" kind="show" id="9Fk-14-f3t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMu-fi-dXE">
+                                <rect key="frame" x="30" y="567" width="315" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sigh up">
+                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Lao-J2-tkd">
+                                <rect key="frame" x="78.5" y="70" width="218" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="IV4-qN-Hrm"/>
+                                    <constraint firstAttribute="width" constant="218" id="dSd-mx-KuO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FMu-fi-dXE" firstAttribute="width" secondItem="2ZJ-k5-yMW" secondAttribute="width" id="2FS-mN-EzC"/>
+                            <constraint firstItem="FMu-fi-dXE" firstAttribute="height" secondItem="2ZJ-k5-yMW" secondAttribute="height" id="BlH-p5-HUn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FMu-fi-dXE" secondAttribute="bottom" constant="50" id="GhR-dK-ygb"/>
+                            <constraint firstItem="2ZJ-k5-yMW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LtW-cf-E0F"/>
+                            <constraint firstItem="FMu-fi-dXE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdb-UJ-THo"/>
+                            <constraint firstItem="Lao-J2-tkd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dvz-WE-RoA"/>
+                            <constraint firstItem="Lao-J2-tkd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="lgf-M2-bWa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ZJ-k5-yMW" secondAttribute="trailing" constant="30" id="oMZ-AY-XTD"/>
+                            <constraint firstItem="2ZJ-k5-yMW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ofT-bj-qbj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2ZJ-k5-yMW" secondAttribute="bottom" constant="120" id="qux-aC-cfA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VC0-v0-u1u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1930.4000000000001" y="100.29985007496252"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Ul-KW-fEE">
+            <objects>
+                <viewController id="uOm-Xq-TVB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A9D-GT-oc5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ambience-1" translatesAutoresizingMaskIntoConstraints="NO" id="s64-u4-XLE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uUz-oa-Oo2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Welcome" id="Mg3-V4-jyA">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="oEh-fE-Knf">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="goy-A4-9cI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s64-u4-XLE" secondAttribute="bottom" id="7Oe-6H-ZQA"/>
+                            <constraint firstItem="s64-u4-XLE" firstAttribute="top" secondItem="A9D-GT-oc5" secondAttribute="top" id="9Dt-Zy-UuQ"/>
+                            <constraint firstAttribute="trailing" secondItem="s64-u4-XLE" secondAttribute="trailing" id="H0z-zY-s5M"/>
+                            <constraint firstItem="s64-u4-XLE" firstAttribute="leading" secondItem="A9D-GT-oc5" secondAttribute="leading" id="f4e-NO-g86"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PZ1-GN-dce"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iN5-NM-TIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="725.48725637181417"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ambience-1" width="750" height="1334"/>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>
